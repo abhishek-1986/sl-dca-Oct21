@@ -3,12 +3,12 @@ DCA documents, Notes and references
 
 Agenda
 
-- [] Introduction
-    - [] Introduction to Containers
-    - [] Introduction to Docker
-    - [] Docker Installation
-- [] Container Lifecycle
-    - Docker Commands
+- [x] Introduction
+    - [x] Introduction to Containers
+    - [x] Introduction to Docker
+    - [x] Docker Installation
+- [x] Container Lifecycle
+    - [ ] Docker Commands
 
 - [] 
 
