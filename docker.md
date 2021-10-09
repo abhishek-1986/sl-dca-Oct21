@@ -19,11 +19,11 @@ Image ==> OS + Middleware + dependencies + App
 
 ### Course Agenda
 
-[x] Docker Fundamentals
-[x] Docker Networking
-[] Docker Storage
-[] Docker Security
-[] Orchestration
+- [x] Docker Fundamentals
+- [ ] Docker Networking
+- [ ] Docker Storage
+- [ ] Docker Security
+- [ ] Orchestration
 
 
 
