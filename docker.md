@@ -1,5 +1,6 @@
 
 ### Keywords
+````
 - Hypervisors --> Containers
 - ESXi / HyperV / KVM / ---> Docker / CRI-O / RKT / Containerd / Podman
 - Pluggable architecture
@@ -7,17 +8,6 @@
 
 Physical Machines (5-10%) ---> Virtual Machines (60-70%)  ---> Containers (90%) 
                                                           ---> Serverless (100%)
-
-
-### Course Agenda
-- Docker Fundamentals
-- Docker Networking
-- Docker Storage
-- Docker Security
-- Orchestration
-
-
-
 Docker != Containers
 Docker vs Kubernetes
 Containers ---> OS/Kernel level Virtualization (Container Runtimes)
@@ -25,35 +15,52 @@ Virtual Machines ---> Hardware level Virtualization (Hypervisor)
 
 Image ==> OS + Middleware + dependencies + App
 
+````
+
+### Course Agenda
+
+- [x] Docker Fundamentals
+- [] Docker Networking
+- [] Docker Storage
+- [] Docker Security
+- [] Orchestration
+
+
+
+
 
 ### Container Runtimes
+````
 - Docker
 - CRI-O
 - RKT
 - Podman
 - containerd
 - OCI
-
+````
 ### Container Orchestration Engines (COEs)
-- Kubernetes
-- Docker Swarm
-- Apache Mesos
-- OpenShift
+````
+=> On-Prem
+  - Kubernetes
+  - Docker Swarm
+  - Apache Mesos
+  - OpenShift
 
-**Cloud based**
-- ECS
-- EKS
-- AKS 
-- GKE
+=> Cloud based
+  - ECS
+  - EKS
+  - AKS 
+  - GKE
+````
 
-
-Docker
+### Docker Versions
+````
   CE --> Community Edition
   EE --> Enterprise Edition (Mirantis Docker)
-
+````
 
 **Classroom Activity 1 (LMS - 2.5 and 2.6)**
-
+````
 - Installing docker
     
     - https://docs.docker.com/engine/install/ubuntu/
@@ -68,9 +75,10 @@ Docker
     sudo su -
     usermod -aG docker <labsuser>
 
-
+````
 
 ### Docker Architecture
+````
     - Docker Host
     - Docker Daemon
     - Docker Client
@@ -83,19 +91,22 @@ Docker
             - ECR
             - ACR
             - MSR
-    
-
-**Docker Orchestration Workflow**
-
-User (You) --> Swarm commands ---> Docker API ---> Docker Daemon --> host kernel
 
 - Registry
     --> Repository
-        --> Versions/tags
+        --> Versions/tags    
+````
+
+**Docker Orchestration Workflow**
+````
+User (You) --> Swarm commands ---> Docker API ---> Docker Daemon --> host kernel
+````
+
+
 
 
 ### Docker commands
-
+````
 docker search ---> lists the images on Docker Hub
 docker image ls (docker images) --> lists the local images
 docker ps (docker container ls)
@@ -112,7 +123,7 @@ Exiting the container
     - CTRL+P+Q    --> Come out of the container without stopping it
 docker stop <containerid>
 docker start <containerid>
-
+````
 
 ### References
 - https://docs.docker.com/get-started/overview/
