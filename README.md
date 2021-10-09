@@ -9,7 +9,8 @@ Agenda
     - [x] Docker Installation
 - [x] Container Lifecycle
     - [ ] Docker Commands
+    - [ ] 
 
-- [] 
+
 
 
