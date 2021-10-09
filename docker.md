@@ -76,6 +76,11 @@ Image ==> OS + Middleware + dependencies + App
     usermod -aG docker <labsuser>
 
 ````
+**Assignment 1**
+
+````
+LMS - 2.8 (Images and Containers)
+````
 
 ### Docker Architecture
 ````
