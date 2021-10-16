@@ -171,6 +171,15 @@ docker commit --> create a new image from container
 
 existing image ----> docker run ---> edit the container ---> commit as a new image
 
+Port binding
+Syntax:
+-P --> random port of host to port 80 of container
+-p hostport:guestport
+
+Example:
+docker run -P <imagename>
+docker run -p 8888:80 <imagename>
+
 
 ````
 
@@ -192,16 +201,19 @@ FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install -y nginx
 COPY index.html /var/www/html
+EXPOSE 80
 CMD nginx -g 'daemon off;'
 
 Build an image from Dockerfile using the following command:
 
-docker image build -t custom-nginx:latest .
+docker image build -t custom-nginx:latest -f /location/file .
 
 ````
 
+docker run -itd -p 8080:80 imagename
 
 
+ipaddress:8080
 
 
 ### CIDR Networking
