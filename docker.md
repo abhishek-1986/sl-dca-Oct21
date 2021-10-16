@@ -216,6 +216,10 @@ docker run -itd -p 8080:80 imagename
 ipaddress:8080
 
 
+
+### Assignments
+1. 3.24
+2. 3.25
 ### CIDR Networking
 
 ````
