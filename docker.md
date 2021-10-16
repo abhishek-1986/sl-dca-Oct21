@@ -38,6 +38,14 @@ Windows Laptop--> Docker Machine ---> VirtualBox --> linux VM ---> Docker
 
 ````
 
+### Docker CLI
+````
+Docker run      --> Working with Single Container
+Docker Compose  --> Work with Multiple containers in a single workflow
+Docker Service  --> Work with Containers in a Multi-host environment
+Docker Stack    --> Docker Compose files in a Multi-host environment
+
+````
 
 
 
@@ -134,6 +142,8 @@ docker run
       -i - interactive
       -t - terminal
       -d - detached/daemonized
+      --name (-n) - give a user defined name to container
+
 docker attach <containerid>
 Exiting the container
     - type 'exit' --> come out of the container and stop it
@@ -145,9 +155,52 @@ docker run -it
 docker exec -it --> run a command inside a container without going into it
 docker attach (similar to ssh into a VM)
 
-docker inspect
+docker diff --> verify the changes between the source image and container
+docker inspect <Objectid or Objectname>
+
+docker pull ubuntu ---> docker pull ubuntu:latest
+docker pull nginx ---> docker pull nginx:latest
+docker history nginx ---> docker history nginx:latest
+docker imagename --> docker imagename:tag (tag defaults to 'latest')
+docker image ls --> list images on Docker host
+docker image rm --> remove a docker image from the host
+
+docker tag --> rename an image or tag
+
+docker commit --> create a new image from container
+
+existing image ----> docker run ---> edit the container ---> commit as a new image
+
 
 ````
+
+### Dockerfile
+````
+## comment
+INSTRUCTION argument
+
+Syntax:
+FROM <imagename>
+RUN command
+COPY 
+CMD command
+
+
+Example:
+
+FROM ubuntu:20.04
+RUN apt-get update
+RUN apt-get install -y nginx
+COPY index.html /var/www/html
+CMD nginx -g 'daemon off;'
+
+Build an image from Dockerfile using the following command:
+
+docker image build -t custom-nginx:latest .
+
+````
+
+
 
 
 
