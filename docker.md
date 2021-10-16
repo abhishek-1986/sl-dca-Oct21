@@ -5,7 +5,8 @@
 - [ ] Docker Networking
 - [ ] Docker Storage
 - [ ] Docker Security
-- [ ] Orchestration
+- [ ] Orchestration using Docker Swarm
+- [ ] Orchestration using Kubernetes
 
 
 
@@ -25,6 +26,15 @@ Containers ---> OS/Kernel level Virtualization (Container Runtimes)
 Virtual Machines ---> Hardware level Virtualization (Hypervisor)
 
 Image ==> OS + Middleware + dependencies + App
+
+Private Cloud Implementation
+    - Openstack  ---> Mirantis, RedHat, IBM
+    - Cloud Foundry
+
+- Docker Machine (Not to be confused with "Docker Engine")
+- Docker Toolbox
+
+Windows Laptop--> Docker Machine ---> VirtualBox --> linux VM ---> Docker
 
 ````
 
@@ -130,7 +140,28 @@ Exiting the container
     - CTRL+P+Q    --> Come out of the container without stopping it
 docker stop <containerid>
 docker start <containerid>
+
+docker run -it
+docker exec -it --> run a command inside a container without going into it
+docker attach (similar to ssh into a VM)
+
+docker inspect
+
 ````
+
+
+
+CIDR Networking
+Network bits (Fixed) / hosts bits (variable)
+
+10.0.0.0/8      ---> 10.{0-255}.{0-255}.{0-255} ---> 256x256x256 --> 16,777,216
+172.17.0.0/16   ---> 172.17.{0-255}.{0-255} --> 256x256 ---> 65,536
+172.31.1.0/24   ---> 172.31.1.{0-255} --> 256
+1.2.3.4/32      ---> 1.2.3.4
+0.0.0.0/0       ---> All the possible IP addresses
+
+
+
 
 ### References
 - https://docs.docker.com/get-started/overview/
