@@ -151,7 +151,9 @@ docker inspect
 
 
 
-CIDR Networking
+### CIDR Networking
+
+````
 Network bits (Fixed) / hosts bits (variable)
 
 10.0.0.0/8      ---> 10.{0-255}.{0-255}.{0-255} ---> 256x256x256 --> 16,777,216
@@ -159,7 +161,7 @@ Network bits (Fixed) / hosts bits (variable)
 172.31.1.0/24   ---> 172.31.1.{0-255} --> 256
 1.2.3.4/32      ---> 1.2.3.4
 0.0.0.0/0       ---> All the possible IP addresses
-
+````
 
 
 
