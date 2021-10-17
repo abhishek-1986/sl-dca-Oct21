@@ -96,11 +96,6 @@ Docker Stack    --> Docker Compose files in a Multi-host environment
     usermod -aG docker <labsuser>
 
 ````
-**Assignment 1**
-
-````
-LMS - 2.8 (Images and Containers)
-````
 
 ### Docker Architecture
 ````
@@ -206,20 +201,28 @@ CMD nginx -g 'daemon off;'
 
 Build an image from Dockerfile using the following command:
 
+Default Dockerfile in current directory:
+docker image build -t custom-nginx:latest .
+
+Customer Dockerfile in a different directory:
 docker image build -t custom-nginx:latest -f /location/file .
 
 ````
 
-docker run -itd -p 8080:80 imagename
-
-
-ipaddress:8080
-
-
 
 ### Assignments
-1. 3.24
-2. 3.25
+
+**9-Oct-2021**
+````
+LMS - 2.8 (Images and Containers)
+````
+
+**16-Oct-2021**
+````
+1. 3.24 (Inspect, Remove, and Prune an Image)
+2. 3.25 (Pull and Delete an Image)
+````
+
 ### CIDR Networking
 
 ````
