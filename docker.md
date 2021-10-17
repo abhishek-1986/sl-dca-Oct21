@@ -1,7 +1,7 @@
 ### Course Agenda
 
 - [x] Docker Fundamentals
-- [ ] Docker Commands
+- [x] Docker Commands
 - [ ] Docker Networking
 - [ ] Docker Storage
 - [ ] Docker Security
