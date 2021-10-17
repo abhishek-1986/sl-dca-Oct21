@@ -11,7 +11,7 @@
 
 
 
-### Keywords
+### Keywords / Concepts
 ````
 - Hypervisors --> Containers
 - ESXi / HyperV / KVM / ---> Docker / CRI-O / RKT / Containerd / Podman
@@ -175,6 +175,23 @@ Example:
 docker run -P <imagename>
 docker run -p 8888:80 <imagename>
 
+Flattening an Image
+
+Create a Container (docker run) ---> Export that container as tarball (docker export) ---> import that container into a new image (docker import)
+
+Step 1 - Create a container:
+docker run -d --name=flat-container mynginx
+
+Step 2 - Export the container as Tarball:
+docker export flat-container > flat.tar
+
+Step 3 - Import the tarball into and image:
+cat flat.tar | docker import - mynginx:flat
+
+Step 4 - Validate the changes by checking image history:
+docker history mynginx:latest
+docker history mynginx:flat
+
 
 ````
 
@@ -221,6 +238,23 @@ Network bits (Fixed) / hosts bits (variable)
 0.0.0.0/0       ---> All the possible IP addresses
 ````
 
+**Class Activity (Flattening images)**
+
+````
+Step 1 - Create a container:
+docker run -d --name=flat-container mynginx
+
+Step 2 - Export the container as Tarball:
+docker export flat-container > flat.tar
+
+Step 3 - Import the tarball into and image:
+cat flat.tar | docker import - mynginx:flat
+
+Step 4 - Validate the changes by checking image history:
+docker history mynginx:latest
+docker history mynginx:flat
+````
+
 ### Assignments
 
 **9-Oct-2021**
@@ -238,6 +272,8 @@ LMS - 2.8 (Images and Containers)
 - https://docs.docker.com/get-started/overview/
 - https://www.docker.com/products/docker-desktop
 - https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
+- https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+
 
 
 
