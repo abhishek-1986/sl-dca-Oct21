@@ -209,6 +209,17 @@ docker image build -t custom-nginx:latest -f /location/file .
 
 ````
 
+### CIDR Networking
+
+````
+Network bits (Fixed) / hosts bits (variable)
+
+10.0.0.0/8      ---> 10.{0-255}.{0-255}.{0-255} ---> 256x256x256 --> 16,777,216
+172.17.0.0/16   ---> 172.17.{0-255}.{0-255} --> 256x256 ---> 65,536
+172.31.1.0/24   ---> 172.31.1.{0-255} --> 256
+1.2.3.4/32      ---> 1.2.3.4
+0.0.0.0/0       ---> All the possible IP addresses
+````
 
 ### Assignments
 
@@ -222,20 +233,6 @@ LMS - 2.8 (Images and Containers)
 1. 3.24 (Inspect, Remove, and Prune an Image)
 2. 3.25 (Pull and Delete an Image)
 ````
-
-### CIDR Networking
-
-````
-Network bits (Fixed) / hosts bits (variable)
-
-10.0.0.0/8      ---> 10.{0-255}.{0-255}.{0-255} ---> 256x256x256 --> 16,777,216
-172.17.0.0/16   ---> 172.17.{0-255}.{0-255} --> 256x256 ---> 65,536
-172.31.1.0/24   ---> 172.31.1.{0-255} --> 256
-1.2.3.4/32      ---> 1.2.3.4
-0.0.0.0/0       ---> All the possible IP addresses
-````
-
-
 
 ### References
 - https://docs.docker.com/get-started/overview/
