@@ -36,6 +36,9 @@ Private Cloud Implementation
 
 Windows Laptop--> Docker Machine ---> VirtualBox --> linux VM ---> Docker
 
+CMD vs ENTRYPOINT
+COPY vs ADD
+
 ````
 
 ### Docker CLI
@@ -255,6 +258,51 @@ docker history mynginx:latest
 docker history mynginx:flat
 ````
 
+
+**Multi Stage Builds**
+**Part 1 (Without Multistage)**
+````
+Step 1 - Write a helloworld program in Go
+vi helloworld.go
+
+package main
+import "fmt"
+func main () {
+    fmt.Println("Hello MultiStage!")
+}
+
+Step 2 - Create a Dockerfile
+vi Dockerfile
+
+FROM golang:1.12.4
+WORKDIR /helloworld
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+CMD ["./helloworld"]
+
+Step 3 - Build an image from the Dockerfile
+
+docker build -t inefficient .
+````
+**Part 2 (With Multistage)**
+````
+Write Dockerfile with Multi Stage
+
+vi Dockerfile
+
+FROM golang:1.12.4 AS stage1
+
+WORKDIR /helloworld
+COPY helloworld.go .
+RUN GOOS=linux go build -a -installsuffix cgo -o helloworld .
+
+FROM alpine:latest
+WORKDIR /root
+COPY --from=stage1 /helloworld/helloworld .
+CMD ["./helloworld"]
+
+````
+
 ### Assignments
 
 **9-Oct-2021**
@@ -273,6 +321,8 @@ LMS - 2.8 (Images and Containers)
 - https://www.docker.com/products/docker-desktop
 - https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
 - https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+- https://docs.docker.com/develop/develop-images/multistage-build/
+
 
 
 
