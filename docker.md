@@ -39,6 +39,19 @@ Windows Laptop--> Docker Machine ---> VirtualBox --> linux VM ---> Docker
 CMD vs ENTRYPOINT
 COPY vs ADD
 
+SDDC --> Software Defined Data Centres
+    - Server Virtualization --> ESXi / HyperV
+    - SAN - EMC2, NetAPP, IBM (AWS EBS / Azure Block)
+    - SDN - VMware NSX, 
+
+API
+    - API developers
+    - API consumers (DevOps / SRE)
+
+Communication Channels:
+IPC --> Inter process Communication (Monolithics)
+API --> Application Programming Interface (Microservices)
+
 ````
 
 ### Docker CLI
@@ -111,7 +124,7 @@ Docker Stack    --> Docker Compose files in a Multi-host environment
         - Public
             - Docker Hub (hub.docker.com)
         - Private
-            - ECR
+            - ECR (AWS --> IAM)
             - ACR
             - MSR
 
@@ -150,8 +163,11 @@ docker stop <containerid>
 docker start <containerid>
 
 docker run -it
+docker run --memory 500M --memory-reservation 250M
+
 docker exec -it --> run a command inside a container without going into it
 docker attach (similar to ssh into a VM)
+
 
 docker diff --> verify the changes between the source image and container
 docker inspect <Objectid or Objectname>
@@ -200,6 +216,16 @@ docker history mynginx:flat
 
 ### Dockerfile
 ````
+FROM
+RUN
+CMD
+ENTRYPOINT
+COPY
+ADD
+ESXPOSE
+ENV
+
+
 ## comment
 INSTRUCTION argument
 
@@ -303,6 +329,10 @@ CMD ["./helloworld"]
 
 ````
 
+Containers on same host --> Bridge/host
+Containers on different host --> Overlay network (SDN --> Software Defined Networking)
+Kubernetes --> CNI (Flannel, Calico, Weave / VPC / )
+
 ### Assignments
 
 **9-Oct-2021**
@@ -316,12 +346,23 @@ LMS - 2.8 (Images and Containers)
 2. 3.25 (Pull and Delete an Image)
 ````
 
+**17-Oct-2021**
+````
+
+````
 ### References
 - https://docs.docker.com/get-started/overview/
 - https://www.docker.com/products/docker-desktop
 - https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go
 - https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 - https://docs.docker.com/develop/develop-images/multistage-build/
+- https://docs.docker.com/develop/develop-images/baseimages/
+- https://dzone.com/articles/docker-layers-explained
+- https://linuxjourney.com/
+- https://dzone.com/articles/docker-container-resource-management-cpu-ram-and-i
+- 
+
+
 
 
 
