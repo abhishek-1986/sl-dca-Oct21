@@ -335,21 +335,22 @@ Kubernetes --> CNI (Flannel, Calico, Weave / VPC / )
 
 ### Assignments
 
-**9-Oct-2021**
+**6-Oct-2021**
 ````
-LMS - 2.8 (Images and Containers)
+1. 2.8 (Images and Containers)
 ````
 
-**16-Oct-2021**
+**7-Oct-2021**
 ````
 1. 3.24 (Inspect, Remove, and Prune an Image)
 2. 3.25 (Pull and Delete an Image)
 ````
 
-**17-Oct-2021**
+**8-Oct-2021**
 ````
 
 ````
+
 ### References
 - https://docs.docker.com/get-started/overview/
 - https://www.docker.com/products/docker-desktop
