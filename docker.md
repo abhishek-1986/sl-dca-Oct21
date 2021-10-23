@@ -333,6 +333,32 @@ Containers on same host --> Bridge/host
 Containers on different host --> Overlay network (SDN --> Software Defined Networking)
 Kubernetes --> CNI (Flannel, Calico, Weave / VPC / )
 
+**23-Oct-2021**
+
+Class Activity 
+4.3
+4.4
+4.6
+4.9
+4.19 
+
+
+{
+    "dns": ["8.8.8.8", "8.8.4.4"]
+}
+
+
+
+4.17
+
+### #############################
+### Docker Swarm
+### #############################
+
+
+
+
+
 ### Assignments
 
 **6-Oct-2021**
