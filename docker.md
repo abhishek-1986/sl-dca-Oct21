@@ -335,21 +335,24 @@ Kubernetes --> CNI (Flannel, Calico, Weave / VPC / )
 
 **23-Oct-2021**
 
-Class Activity 
+**Class Activity**
+````
 4.3
 4.4
 4.6
 4.9
 4.19 
+````
 
+**Sample daemon.json file**
+````
+vi /etc/docker/daemon.json
 
 {
     "dns": ["8.8.8.8", "8.8.4.4"]
 }
+````
 
-
-
-4.17
 
 ### #############################
 ### Docker Swarm
@@ -370,6 +373,9 @@ docker service (replacement for docker run)
 ````
 5.8
 5.9
+
+
+4.17
 ````
 
 ### Assignments
