@@ -2,7 +2,7 @@
 
 - [x] Docker Fundamentals
 - [x] Docker Commands
-- [ ] Docker Networking
+- [x] Docker Networking
 - [ ] Docker Storage
 - [ ] Docker Security
 - [ ] Orchestration using Docker Swarm
@@ -355,9 +355,22 @@ Class Activity
 ### Docker Swarm
 ### #############################
 
+**Swarm Terminology**
+````
+Runtime (Docker in our case)
+Swarm
+Tasks
+Replicas
+Manager/Leader/Worker Nodes
+docker service (replacement for docker run)
+````
 
+**Class Activity**
 
-
+````
+5.8
+5.9
+````
 
 ### Assignments
 
