@@ -348,7 +348,10 @@ Kubernetes --> CNI (Flannel, Calico, Weave / VPC / )
 
 **8-Oct-2021**
 ````
-
+1. 3.19 Configure a registry
+2. 3.20 Login to a registry
+3. 3.21 Push an image to Dockerhub
+4. 3.22 Push an image to registry
 ````
 
 ### References
