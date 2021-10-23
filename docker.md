@@ -51,6 +51,7 @@ API
 Communication Channels:
 IPC --> Inter process Communication (Monolithics)
 API --> Application Programming Interface (Microservices)
+VMware vMotion
 
 ````
 
@@ -371,12 +372,15 @@ docker service (replacement for docker run)
 **Class Activity**
 
 ````
-5.8
-5.9
+5.8 - Set up Swarm Cluster with a Manager and Worker Node
+5.9 - Join Nodes to Swarm
 
-
-4.17
+5.10 - Create Replicated and Global Services
+5.11 - Running Container vs. Running Service
+5.12 - Create an Overlay Network
+4.17 - Publishing Ports
 ````
+
 
 ### Assignments
 
@@ -409,7 +413,7 @@ docker service (replacement for docker run)
 - https://dzone.com/articles/docker-layers-explained
 - https://linuxjourney.com/
 - https://dzone.com/articles/docker-container-resource-management-cpu-ram-and-i
-- 
+- https://docs.docker.com/engine/swarm/swarm-tutorial/
 
 
 
