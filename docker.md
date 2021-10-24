@@ -5,6 +5,9 @@
 - [x] Docker Networking
 - [x] Orchestration using Docker Swarm
 - [ ] Docker Storage
+        - [ ] Volumes
+        - [ ] Bind Mounts
+        - [ ] tmpfs
 - [ ] Docker Security
 - [ ] Orchestration using Kubernetes
 
@@ -68,7 +71,7 @@ VMware vMotion
 ````
 Docker run      --> Working with Single Container
 Docker Service  --> Work with Containers in a Multi-host environment
-Docker Compose  --> Work with Multiple containers in a single workflow
+Docker Compose  --> Work with Multiple containers in a single workflow on a single Host
 Docker Stack    --> Docker Compose files in a Multi-host environment
 
 ````
@@ -418,6 +421,18 @@ Complete the following Tutorial:
 https://docs.docker.com/samples/wordpress/
 
 ````
+**Docker Stack**
+````
+kubectl create -f filename.yaml
+
+docker stack deploy -c filename.yaml <stack-name>
+
+**Class Activity:**
+
+5.23 - Convert an Application Deployment into a Stack
+````
+
+
 
 ### Assignments
 
