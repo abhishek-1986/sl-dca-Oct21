@@ -3,10 +3,19 @@
 - [x] Docker Fundamentals
 - [x] Docker Commands
 - [x] Docker Networking
+- [x] Orchestration using Docker Swarm
 - [ ] Docker Storage
 - [ ] Docker Security
-- [ ] Orchestration using Docker Swarm
 - [ ] Orchestration using Kubernetes
+
+
+SWMKEY-1-47S+pMHNdplgG1HhSThDkCRcubrSZ638TNxsjcVVlnQ
+
+
+VXNET
+iptables
+SNAT/DNAT
+
 
 
 
@@ -58,8 +67,8 @@ VMware vMotion
 ### Docker CLI
 ````
 Docker run      --> Working with Single Container
-Docker Compose  --> Work with Multiple containers in a single workflow
 Docker Service  --> Work with Containers in a Multi-host environment
+Docker Compose  --> Work with Multiple containers in a single workflow
 Docker Stack    --> Docker Compose files in a Multi-host environment
 
 ````
@@ -380,6 +389,19 @@ docker service (replacement for docker run)
 5.12 - Create an Overlay Network
 4.17 - Publishing Ports
 ````
+**24-Oct-2021**
+
+**Class Activity**
+````
+5.13
+5.14
+5.15
+
+5.17
+5.19
+
+
+````
 
 
 ### Assignments
@@ -414,6 +436,15 @@ docker service (replacement for docker run)
 - https://linuxjourney.com/
 - https://dzone.com/articles/docker-container-resource-management-cpu-ram-and-i
 - https://docs.docker.com/engine/swarm/swarm-tutorial/
+- https://github.com/swarmpit/swarmpit#installation
+- https://swarmpit.io/
+- https://blog.neuvector.com/article/docker-swarm-container-networking
+- https://apimirror.com/docker~17/engine/swarm/swarm-tutorial/rolling-update/index
+- 
+
+
+
+
 
 
 
