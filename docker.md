@@ -399,10 +399,25 @@ docker service (replacement for docker run)
 
 5.17
 5.19
-
-
 ````
 
+**Class Activity: Docker Compose**
+````
+1. Docker Compose installation:
+Reference: https://docs.docker.com/compose/install/
+
+Steps:
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+
+
+2. Working with Docker Compose
+Complete the following Tutorial:
+
+https://docs.docker.com/samples/wordpress/
+
+````
 
 ### Assignments
 
