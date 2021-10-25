@@ -430,6 +430,9 @@ docker stack deploy -c filename.yaml <stack-name>
 **Class Activity:**
 
 5.23 - Convert an Application Deployment into a Stack
+5.26 - 
+5.31 - Mount Volumes via Swarm Services
+
 ````
 
 
@@ -454,7 +457,12 @@ docker stack deploy -c filename.yaml <stack-name>
 3. 3.21 Push an image to Dockerhub
 4. 3.22 Push an image to registry
 ````
-
+**24-Oct-2021**
+````
+5.31
+5.32
+5.38
+````
 ### References
 - https://docs.docker.com/get-started/overview/
 - https://www.docker.com/products/docker-desktop
