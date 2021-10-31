@@ -13,13 +13,6 @@
 - [x] Orchestration using Kubernetes ## Will be covered in CKA course in Detail.
 
 
-VXNET
-iptables
-SNAT/DNAT
-
-
-
-
 
 ### Keywords / Concepts
 ````
@@ -62,6 +55,11 @@ Communication Channels:
 IPC --> Inter process Communication (Monolithics)
 API --> Application Programming Interface (Microservices)
 VMware vMotion
+
+Container Networking [under the hood]
+    - VXNET
+    - iptables
+    - SNAT/DNAT
 
 ````
 
