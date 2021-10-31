@@ -4,15 +4,13 @@
 - [x] Docker Commands
 - [x] Docker Networking
 - [x] Orchestration using Docker Swarm
-- [ ] Docker Storage
-        - [ ] Volumes
-        - [ ] Bind Mounts
-        - [ ] tmpfs
+- [x] Docker Storage
+     - [x] Volumes
+     - [x] Bind Mounts
+     - [x] tmpfs
+- [ ] Enterprise Docker
 - [ ] Docker Security
-- [ ] Orchestration using Kubernetes
-
-
-SWMKEY-1-47S+pMHNdplgG1HhSThDkCRcubrSZ638TNxsjcVVlnQ
+- [x] Orchestration using Kubernetes ## Will be covered in CKA course in Detail.
 
 
 VXNET
@@ -479,27 +477,6 @@ docker stack deploy -c filename.yaml <stack-name>
 - https://blog.neuvector.com/article/docker-swarm-container-networking
 - https://apimirror.com/docker~17/engine/swarm/swarm-tutorial/rolling-update/index
 - 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
