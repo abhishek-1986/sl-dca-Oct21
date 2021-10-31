@@ -337,11 +337,11 @@ COPY --from=stage1 /helloworld/helloworld .
 CMD ["./helloworld"]
 
 ````
-
+```
 Containers on same host --> Bridge/host
 Containers on different host --> Overlay network (SDN --> Software Defined Networking)
 Kubernetes --> CNI (Flannel, Calico, Weave / VPC / )
-
+```
 **23-Oct-2021**
 
 **Class Activity**
